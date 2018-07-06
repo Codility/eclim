@@ -90,7 +90,7 @@ eclipse plugins and vimfiles installed in a root owned shared location.
   exit 1
 fi
 
-TEMPDIR=$(mktemp -d -t eclim-installer.XXXX)
+TEMPDIR=$(mktemp -d -t eclim-installer.XXXXXXX)
 
 # determine start of archive
 ARCHIVE_START=$(awk '/^__BEGIN_ARCHIVE__/ { print NR + 1; exit 0; }' $0)
